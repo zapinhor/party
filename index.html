@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The party</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="freddy.png">
+    <script>
+  function countdown() {
+    const countdownDate = new Date('October 27, 2023 00:00:00').getTime();
+    const now = new Date().getTime();
+    const timeLeft = countdownDate - now;
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    document.getElementById('countdown').innerHTML = days;
+  }
+
+  setInterval(countdown, 1000);
+</script>
+
+</head>
+<body>
+    <div class="box">
+      <h1> <span id="countdown"></span> days until the party.</h1>
+    </div>
+    <center>
+    <audio src="musica/badending (online-audio-converter.com).mp3" controls></audio>
+    </center>
+
+</body>
+</html>
